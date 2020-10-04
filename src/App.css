@@ -1,0 +1,31 @@
+.app-wrapper {
+  display: grid;
+  width: 1200px; /*Ширина страницы*/
+  margin: 10px; /*выравнивание*/
+
+  grid-template-areas: /*шаблон, распределение строк и колонок*/
+  "h h" /*первая строка header, занимает 2 колонки*/
+  "n c";/*вторая строка, 1 колонка - nav, 2 колонка - content */
+
+  grid-template-rows: 60px 2fr; /*количество строк*/
+  grid-template-columns: 2fr 10fr; /*количество колонок*/
+  /*grid-gap: 10px; /*расстояние между элементами*/
+}
+.header {
+grid-area: h; /*присвоили имя, псевдоним*/
+background-color: black;
+}
+
+.header img {
+  width: 40px;
+}
+
+.nav {
+grid-area: n;  /* присвоили имя, псевдоним*/
+background-color:silver;
+}
+
+.content {
+  grid-area: с;  /* присвоили имя, псевдоним*/
+  background-color: blueviolet;
+}
