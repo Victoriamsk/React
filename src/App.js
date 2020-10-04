@@ -18,7 +18,7 @@ const App = () => {
    ava + description
    </div>
    <div>
-   My post
+   My post love
    <div>
      New post
    </div>
